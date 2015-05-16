@@ -19,6 +19,8 @@ function vgArray() {
 
     //Loop
 
+    console.log("\n Normal Array:”);
+
     for (var i =0; i < videoGame.length; i++) {
 
         console.log( videoGame[i] + " is a(n) " + videoGameGenres[i] + " type game.");
@@ -27,7 +29,14 @@ function vgArray() {
     poppedGame = videoGame.pop();
     poppedGenre = videoGameGenres.pop();
 
-    
+    console.log("\n Popped Array:”);
+
+
+        for (var i =0; i < videoGame.length; i++) {
+
+        console.log( videoGame[i] + " is a(n) " + videoGameGenres[i] + " type game.");
+    }
+}
 
 //MAIN CODE
 
