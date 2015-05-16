@@ -19,7 +19,7 @@ function vgArray() {
 
     //Loop
 
-    console.log("\n Normal Array:”);
+    console.log("\n Normal Array:");
 
     for (var i =0; i < videoGame.length; i++) {
 
@@ -29,13 +29,15 @@ function vgArray() {
     poppedGame = videoGame.pop();
     poppedGenre = videoGameGenres.pop();
 
-    console.log("\n Popped Array:”);
+    console.log("\n Popped Array:");
 
 
-        for (var i =0; i < videoGame.length; i++) {
+        for (var i = 0; i < videoGame.length; i++) {
 
         console.log( videoGame[i] + " is a(n) " + videoGameGenres[i] + " type game.");
     }
+
+    console.log("The popped game was " + poppedGame + " a(n) " + poppedGenre + " type game.");
 }
 
 //MAIN CODE
