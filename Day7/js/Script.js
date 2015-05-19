@@ -16,10 +16,23 @@ function evenArray(argArray){
     var newArray = [];
     var modNum;
 
-    console.log(argArray);
+    for (i = 0; i < argArray.length; i++){
 
+        modNum = argArray [i] % 2;
+
+        if (modNum === 0) {
+
+            newArray.push(argArray[i]);
+
+        }
+
+    }
+
+    return newArray;
 
 }
 
 //Main Code
 returnedArray = evenArray(numberArray);
+
+console.log("The even number array is " + returnedArray);
