@@ -35,7 +35,6 @@ function arrayFunction(passedArray){
     } while (swapped);
 
     return passedArray;
-
 }
 
 //Main Code
