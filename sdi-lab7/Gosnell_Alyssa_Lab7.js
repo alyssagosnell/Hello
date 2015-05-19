@@ -43,20 +43,21 @@ function arrayFunction(passedArray){
 for (var i = 0; i < 3; i++) {
 
     if (i === 0) {
-
+        console.log("This is the first array not in order: " + arrayFirstSet );
         orderNumberArray = arrayFunction(arrayFirstSet);
 
     }
     else if (i === 1) {
-
+        console.log("This is the second array not in order: " + arraySecondSet);
         orderNumberArray = arrayFunction(arraySecondSet);
 
     }
     else if (i === 2) {
-
+        console.log("This is the third array not in order: " + arrayThirdSet);
         orderNumberArray = arrayFunction(arrayThirdSet);
 
     }
+
     console.log("This is the array in order: " + orderNumberArray);
 }
 
