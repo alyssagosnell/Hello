@@ -25,7 +25,24 @@ function arrayFunction(){
 //Main Code
 
 for (i = 0; i < 3; i++) {
+    
+    if (i === 0) {
 
+        orderNumberArray = arrayFunction(arrayFirstSet);
+
+    }
+    else if(i === 1) {
+
+        orderNumberArray = arrayFunction(arraySecondSet);
+
+    }
+    else if(i === 2 ) {
+
+        orderNumberArray = arrayFunction(arrayThirdSet);
+
+    }
+
+    console.log("This is the array in order: " + orderNumberArray);
 
 
 }
