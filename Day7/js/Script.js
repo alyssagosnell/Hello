@@ -7,9 +7,16 @@
 //Global variables
 var returnedArray = [];
 var numberArray = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ];
-var userPrompt = prompt("Enter 'odd' to return odd numbers or 'even' to return even numbers.");
+var userPrompt;
 
 
+userPrompt = prompt("Enter 'odd' to return odd numbers or 'even' to return even numbers.");
+
+while (userPrompt != "odd" && userPrompt != "even") {
+
+    userPrompt = prompt("HEY! You can read, can't you? Enter 'odd' or 'even'");
+
+}
 
 //Function
 function evenArray(argArray, oddOrEven) {
@@ -18,6 +25,7 @@ function evenArray(argArray, oddOrEven) {
     var newArray = [];
     var modNum;
     var zeroOrOne;
+    var newArgArray = new Array(argArray);
 
     if (oddOrEven === "odd") {
 
@@ -28,17 +36,21 @@ function evenArray(argArray, oddOrEven) {
 
     }
 
-    for (i = 0; i < argArray.length; i++) {
+    for (i = 0; i < numberArray.length; i++) {
 
-        modNum = argArray [i] % 2;
+        modNum = numberArray [i] % 2;
 
         if (modNum === zeroOrOne) {
 
-            newArray.push(argArray[i]);
+            newArray.push(numberArray[i]);
 
         }
 
     }
+
+   // argArray.pop();
+    //console.log("argArray: " +argArray);
+    //console.log("newArgArray: " + newArgArray);
 
     return newArray;
 
@@ -48,3 +60,5 @@ function evenArray(argArray, oddOrEven) {
 returnedArray = evenArray(numberArray, userPrompt);
 
 console.log("The " + userPrompt + " number array is " + returnedArray);
+
+console.log('numberArray: ' + numberArray);
