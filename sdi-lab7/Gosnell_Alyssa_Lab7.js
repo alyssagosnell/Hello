@@ -18,14 +18,42 @@ var arrayThirdSet = [ 2, 3, 4, 1, 10, 27, 32, 51, 6, 100, 8, 42 ];
 
 //Function
 
-function arrayFunction(){
+function arrayFunction(passedArray){
+
+    var swapped = false;
+
+    while (swapped === false) {
+
+        for (i = 0; i < passedArray.length; i++) {
+
+
+            if (passedArray[i] > passedArray[i + 1]) {
+
+
+                var tempNumber = passedArray[i];
+
+                passedArray[i] = passedArray[i +1];
+
+                passedArray[i + 1] = tempNumber;
+
+                swapped = true
+
+
+            }
+
+        }
+    }
+
+    return passedArray;
 
 }
+
+
 
 //Main Code
 
 for (i = 0; i < 3; i++) {
-    
+
     if (i === 0) {
 
         orderNumberArray = arrayFunction(arrayFirstSet);
