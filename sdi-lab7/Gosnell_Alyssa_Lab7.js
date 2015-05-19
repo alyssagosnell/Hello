@@ -22,55 +22,41 @@ function arrayFunction(passedArray){
 
     var swapped = false;
 
-    while (swapped === false) {
-
-        for (i = 0; i < passedArray.length; i++) {
-
-
-            if (passedArray[i] > passedArray[i + 1]) {
-
-
-                var tempNumber = passedArray[i];
-
-                passedArray[i] = passedArray[i +1];
-
-                passedArray[i + 1] = tempNumber;
-
-                swapped = true
-
-
+    do {
+        swapped = false;
+        for (var i = 0; i < passedArray.length-1; i++) {
+            if (passedArray[i] > passedArray[i+1]) {
+                var temp = passedArray[i];
+                passedArray[i] = passedArray[i+1];
+                passedArray[i+1] = temp;
+                swapped = true;
             }
-
         }
-    }
+    } while (swapped);
 
     return passedArray;
 
 }
 
-
-
 //Main Code
 
-for (i = 0; i < 3; i++) {
+for (var i = 0; i < 3; i++) {
 
     if (i === 0) {
 
         orderNumberArray = arrayFunction(arrayFirstSet);
 
     }
-    else if(i === 1) {
+    else if (i === 1) {
 
         orderNumberArray = arrayFunction(arraySecondSet);
 
     }
-    else if(i === 2 ) {
+    else if (i === 2) {
 
         orderNumberArray = arrayFunction(arrayThirdSet);
 
     }
-
     console.log("This is the array in order: " + orderNumberArray);
-
-
 }
+
