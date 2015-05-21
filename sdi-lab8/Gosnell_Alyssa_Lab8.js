@@ -10,16 +10,31 @@ May 21, 2015
 //PROBLEM ONE
 
 //Global Variables
-var emailAddress = "akgosnell@fullsail.edu";
+var emailAddress;
 
 //Function
-function findSymbol(emailAddress) {
+function findSymbol(emailArg) {
 
-    var atSymbol = emailAddress.charAt(9);
+    var atSymbol;
+    var findAt = emailArg.indexOf("@");
+    var findAt2 = emailArg.lastIndexOf("@");
 
-    return atSymbol;
+    if (findAt >= 0 && findAt2 === findAt) {
+
+        atSymbol = true
+
+    } else {
+
+        atSymbol = false
+    }
+
 
 }
 
-//Main Code
-console.log("The character located at index 9 is the " + findSymbol(emailAddress) + " symbol.");
+
+
+
+// Main Code
+emailAddress = prompt("Enter an email address below: ");
+
+findSymbol(emailAddress);
