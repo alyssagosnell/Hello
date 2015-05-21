@@ -28,11 +28,18 @@ function findSymbol(emailArg) {
         atSymbol = false
     }
 
+    if (atSymbol === false || emailArg.indexOf(".") <= 0 || emailArg.indexOf(" ") >= 0)
+    {
+        console.log("The email you entered is not valid.");
+
+    } else {
+
+        console.log("The email you entered is valid.");
+
+    }
+
 
 }
-
-
-
 
 // Main Code
 emailAddress = prompt("Enter an email address below: ");
