@@ -53,7 +53,6 @@ var firstString = "Blue, Yellow, Green, Orange";
 var comma = ",";
 var slash = "/";
 
-
 //Function
 
 function replacedSeparator(string, sep1, sep2) {
@@ -61,9 +60,7 @@ function replacedSeparator(string, sep1, sep2) {
     var newString = string.replace( /,/g, "/");
 
     return newString;
-
 }
 
-
 //Main Code
-console.log(replacedSeparator(firstString, comma, slash));
+console.log("This is the old string: " + firstString + " and this is the new string: " + replacedSeparator(firstString, comma, slash));
