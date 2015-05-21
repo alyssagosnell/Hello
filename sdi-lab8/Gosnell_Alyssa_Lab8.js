@@ -58,9 +58,10 @@ var slash = "/";
 
 function replacedSeparator(string, sep1, sep2) {
 
-    
+    var newString = string.replace( /,/g, "/");
 
-    return string;
+    return newString;
+
 }
 
 
