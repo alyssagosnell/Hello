@@ -57,4 +57,6 @@ string = prompt("Please enter a number: ","12");
 
 returnedNumber = numberFunction(string);
 
-console.log("This is the number you entered: " + returnedNumber + ".");
+console.log("This is the number you entered: ");
+
+console.log(returnedNumber);
