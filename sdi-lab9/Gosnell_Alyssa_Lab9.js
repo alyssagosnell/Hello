@@ -37,9 +37,17 @@ var returnedNumber;
 //FUNCTION
 function numberFunction(numArg) {
 
-    while ()
+    while (isNaN(numArg)) {
 
+        numArg = prompt("Enter a number:");
 
+    }
+
+    var one = numArg;
+
+    newNum = Number(one);
+
+    return newNum;
 }
 
 
@@ -49,3 +57,4 @@ string = prompt("Please enter a number: ","12");
 
 returnedNumber = numberFunction(string);
 
+console.log("This is the number you entered: " + returnedNumber + ".");
