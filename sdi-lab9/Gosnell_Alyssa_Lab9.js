@@ -28,35 +28,64 @@
 
 
 
-//PROBLEM TWO - NUMBERS VS STRINGS
+////PROBLEM TWO - NUMBERS VS STRINGS
+//
+////GLOBAL VARIABLES
+//var string;
+//var returnedNumber;
+//
+////FUNCTION
+//function numberFunction(numArg) {
+//
+//    while (isNaN(numArg)) {
+//
+//        numArg = prompt("Enter a number:");
+//
+//    }
+//
+//    var one = numArg;
+//
+//    newNum = Number(one);
+//
+//    return newNum;
+//}
+//
+//
+////MAIN CODE
+//
+//string = prompt("Please enter a number: ","12");
+//
+//returnedNumber = numberFunction(string);
+//
+//console.log("This is the number you entered: ");
+//
+//console.log(returnedNumber);
+
+//PROBLEM THREE - DATE DIFFERENCES
 
 //GLOBAL VARIABLES
-var string;
-var returnedNumber;
+var myDate = "5/23/2015";
+var newDate = new Date(1996, 8, 30);
+var dateString;
 
 //FUNCTION
-function numberFunction(numArg) {
+function dateFunction(date1, date2) {
 
-    while (isNaN(numArg)) {
+    dateDiff = date1 - date2;
 
-        numArg = prompt("Enter a number:");
+    dateDiff = Math.abs(dateDiff / 1000 / 60 / 60 / 24);
 
-    }
+    console.log(myDate);
 
-    var one = numArg;
+    console.log(newDate);
 
-    newNum = Number(one);
+    console.log(dateDiff);
 
-    return newNum;
+
+
 }
 
 
+
 //MAIN CODE
-
-string = prompt("Please enter a number: ","12");
-
-returnedNumber = numberFunction(string);
-
-console.log("This is the number you entered: ");
-
-console.log(returnedNumber);
+dateFunction();
