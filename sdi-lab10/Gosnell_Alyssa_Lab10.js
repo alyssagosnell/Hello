@@ -13,7 +13,7 @@ var returnedVariable;
 function lotteryFunction(userInput) {
 
     var floridaLottery = [];
-    var powerBall;
+    var powerBall = [];
     var newVar;
 
     if(userInput === "Florida Lottery") {
@@ -26,6 +26,7 @@ function lotteryFunction(userInput) {
 
         return floridaLottery;
 
+
     } else if (userInput === "PowerBall") {
 
             for (var i = 0; i < 5; i++) {
@@ -33,10 +34,9 @@ function lotteryFunction(userInput) {
                 powerBall.push(Math.round((Math.random() * 59) + 1));
         }
         newVar = powerBall;
-        
+
         return newVar;
     }
-
 }
 
 //Main Code
@@ -53,6 +53,3 @@ if (userAnswer === "Florida Lottery") {
     console.log("The random numbers for the PowerBall Lottery are: " + returnedVariable + ".");
 
 }
-
-
-
