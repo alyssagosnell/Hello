@@ -33,6 +33,7 @@ function lotteryFunction(userInput) {
                 powerBall.push(Math.round((Math.random() * 59) + 1));
         }
         newVar = powerBall;
+        
         return newVar;
     }
 
@@ -47,10 +48,11 @@ if (userAnswer === "Florida Lottery") {
 
     console.log("The random numbers for the Florida Lottery are: " + returnedVariable + ".");
 
-} else {
+} else if (userAnswer === "PowerBall") {
 
-
-
-
+    console.log("The random numbers for the PowerBall Lottery are: " + returnedVariable + ".");
 
 }
+
+
+
