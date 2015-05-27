@@ -20,15 +20,21 @@ function lotteryFunction(userInput) {
 
         for (var i = 0; i < 6; i++) {
 
-            floridaLottery.push(Math.round((Math.random() * 59) + 1));
+            floridaLottery.push(Math.round((Math.random() * 53) + 1));
         }
         newVar = floridaLottery;
 
         return floridaLottery;
 
+    } else if (userInput === "PowerBall") {
+
+            for (var i = 0; i < 5; i++) {
+
+                powerBall.push(Math.round((Math.random() * 59) + 1));
+        }
+        newVar = powerBall;
+        return newVar;
     }
-
-
 
 }
 
