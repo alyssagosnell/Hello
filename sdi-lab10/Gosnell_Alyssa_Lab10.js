@@ -12,7 +12,39 @@ var returnedVariable;
 //Function
 function lotteryFunction(userInput) {
 
+    var floridaLottery = [];
+    var powerBall;
+    var newVar;
+
+    if(userInput === "Florida Lottery") {
+
+        for (var i = 0; i < 6; i++) {
+
+            floridaLottery.push(Math.round((Math.random() * 59) + 1));
+        }
+        newVar = floridaLottery;
+
+        return floridaLottery;
+
+    }
+
+
+
 }
 
 //Main Code
+userAnswer = prompt("Which lottery would you like to select?", "Florida Lottery or PowerBall");
+
 returnedVariable = lotteryFunction(userAnswer);
+
+if (userAnswer === "Florida Lottery") {
+
+    console.log("The random numbers for the Florida Lottery are: " + returnedVariable + ".");
+
+} else {
+
+
+
+
+
+}
