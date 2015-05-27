@@ -29,10 +29,13 @@ function lotteryFunction(userInput) {
 
     } else if (userInput === "PowerBall") {
 
-            for (var i = 0; i < 5; i++) {
+            for (var i = 0; i < 4; i++) {
 
                 powerBall.push(Math.round((Math.random() * 59) + 1));
         }
+
+        powerBall.push(Math.round((Math.random() * 35) + 1));
+
         newVar = powerBall;
 
         return newVar;
